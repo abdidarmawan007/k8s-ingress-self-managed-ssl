@@ -14,7 +14,7 @@ NAME                    TYPE          CREATION_TIMESTAMP             EXPIRE_TIME
 ssl-sectigo-yourdomain  SELF_MANAGED  2020-07-13T11:04:44.497-07:00  2021-09-26T16:59:59.000-07:00
 ```
 
-#### edit your ingress for use ssl
+#### edit your ingress for use Self-managed SSL we upload via gcloud cli
 ```
 ingress.gcp.kubernetes.io/pre-shared-cert: "ssl-sectigo-yourdomain"
 ```
@@ -46,4 +46,8 @@ spec:
         - backend:
             serviceName: prod-api
             servicePort: 80
+```
+### apply change in ingress yaml
+```
+kubectl apply -f production-ingress.yaml
 ```
