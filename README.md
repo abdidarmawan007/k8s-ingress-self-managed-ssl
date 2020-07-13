@@ -24,7 +24,7 @@ kind: Ingress
 metadata:
   name: prod-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "production-ip-frontend"
+    kubernetes.io/ingress.global-static-ip-name: "prod-ingress"
     ingress.gcp.kubernetes.io/pre-shared-cert: "ssl-sectigo-yourdomain"
 spec:
   rules:
