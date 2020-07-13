@@ -47,7 +47,7 @@ spec:
             serviceName: prod-api
             servicePort: 80
 ```
-### apply change in ingress yaml
+#### apply change in ingress yaml
 ```
 kubectl apply -f production-ingress.yaml
 ```
