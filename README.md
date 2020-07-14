@@ -1,5 +1,7 @@
 # Upload Self-managed SSL to GKE Ingress GCE
 
+#### you need combine (for example rapidssl or Sectigo) My_CA_Bundle.ca-bundle  ServerCertificate.cer from provider into single file star_yourdomain.crt
+
 #### upload your ssl sertificate, for example im use wildcard ssl
 
 ```
